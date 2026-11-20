@@ -1,8 +1,7 @@
 // fibs command to build and serve the emulators webpage
-// deno-lint-ignore-file no-unversioned-import
-import { Configurer, log, proj, Project, util } from "jsr:@floooh/fibs";
-import { green } from "jsr:@std/fmt/colors";
-import { dirname } from "jsr:@std/path";
+import { Configurer, log, proj, Project, util } from "jsr:@floooh/fibs@^1";
+import { green } from "jsr:@std/fmt@^1/colors";
+import { dirname } from "jsr:@std/path@^1";
 
 export function addWebpageCommand(c: Configurer) {
     c.addCommand({ name: "webpage", help, run });
